@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import * as THREE from 'three'
 //declare var THREE:any;
+//ng build --prod --base-href "https://weiserhei.github.io/angular-threejs-test/dist/"
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent implements OnInit {
     //called after the constructor and called  after the first ngOnChanges() 
     var camera, scene, renderer;
     var mesh;
+
     init();
     animate();
     function init() {
